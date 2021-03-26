@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="#eb4f38">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/default_head">
+
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center"
+            android:text="登录"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt_my_orders"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/icon_list_o"
+                android:gravity="center_vertical"
+
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:text="历史数据" />
+            <View style="@style/line_vertical"/>
+<!--            <TextView-->
+<!--                android:id="@+id/secure"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:drawableLeft="@drawable/icon_favorite"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="开锁" />-->
+<!--            <View style="@style/line_vertical"/>-->
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+<!--    <Button-->
+<!--        android:id="@+id/excel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="打印" />-->
+<!--    <Button-->
+<!--        android:id="@+id/excel_open"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="打开" />-->
+<!--    <Button-->
+<!--        android:id="@+id/btn_logout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="退出登录" />-->
+
+
+</LinearLayout>
